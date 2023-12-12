@@ -22,10 +22,10 @@ class EmailService
         $mail->SMTPAuth = true;
         $mail->Host = 'smtp.sendgrid.net';
         $mail->Port = 465;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->SMTPSecure = 'ssl';
         $mail->Username = 'apikey';
-        $mail->Password = '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';
-        $mail->SetFrom('noreply@rgsteknoloji.com.tr', $title);
+        $mail->Password = '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';
+        $mail->SetFrom('noreply@pratikhesap.com', $title);
         $mail->CharSet = 'UTF-8';
         $mail->Subject = $baslik;
         $content = $icerik;
